@@ -2,7 +2,7 @@
 
 This is a repo for me to practice in React. I'm more of an [Ember](https://emberjs.com/) guy but I get that I need to learn the other popular frameworks to be competitive.
 
-This is a simple app that's able to display all the Universities in the world by using Hipo/university-domains-list. In addition, you can subscribe to a University to get updates from them (in theory).
+This is a simple app that's able to display all the Universities in the world by using [Hipo/university-domains-list](https://github.com/Hipo/university-domains-list). In addition, you can subscribe to a University to get updates from them (in theory).
 
 The subscription is powered by Firebase using its local emulator.
 
