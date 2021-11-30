@@ -1,0 +1,100 @@
+.host {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 800;
+}
+
+.scrim {
+  position: absolute;
+  z-index: 825;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: var(--scrim-color);
+  opacity: var(--scrim-opacity);
+}
+
+.card {
+  position: relative;
+  z-index: 850;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--surface-color);
+  box-shadow: var(--elevation-8);
+}
+
+@media (min-width: 480px) {
+  .card {
+    top: 16px;
+    max-width: 448px;
+    height: calc(100% - 32px);
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: var(--border-radius-square);
+  }
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+
+.navBackButton {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+  margin-left: 4px;
+  padding: 12px;
+  line-height: 0;
+  color: var(--font-secondary-color);
+  background: none;
+  border: none;
+}
+
+.navBackButtonIcon {
+  min-width: 24px;
+  min-height: 24px;
+  padding: 2px;
+  color: inherit;
+}
+
+.name {
+  margin-top: 24px;
+  margin-bottom: 0;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-family: var(--font-primary-family);
+  font-size: var(--font-size-24);
+  text-align: center;
+}
+
+.country {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-family: var(--font-primary-family);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-16);
+  text-align: center;
+}
+
+.websiteList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 16px 16px;
+  list-style-type: none;
+}
+
+.websiteListItem {
+  display: inline-block;
+}

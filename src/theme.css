@@ -1,0 +1,42 @@
+.theme {
+  /* Elevation */
+  --elevation-8: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+
+  /* Body */
+  --body-background-color: #fafafa;
+
+  /* Borders */
+  --border-radius-card: 12px;
+  --border-radius-circle: 50%;
+  --border-radius-pill: 30px;
+  --border-radius-square: 8px;
+  --border-color: rgba(0, 0, 0, 0.12);
+
+  /* Palette */
+  --form-color: #eceff1;
+
+  /* Scrim */
+  --scrim-color: #000;
+  --scrim-opacity: 0.32;
+
+  /* Surface */
+  --surface-color: #fff;
+
+  /* Typography */
+  --font-primary-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-primary-color: rgba(0, 0, 0, 0.87);
+  --font-secondary-color: rgba(0, 0, 0, 0.60);
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --line-height-12: 1.25rem;
+  --line-height-14: 1.25rem;
+  --line-height-16: 1.5rem;
+  --line-height-20: 2rem;
+  --line-height-24: 2rem;
+}

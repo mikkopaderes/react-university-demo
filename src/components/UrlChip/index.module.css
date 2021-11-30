@@ -1,0 +1,15 @@
+.host {
+  display: inline-block;
+  height: 32px;
+  margin: 4px;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-medium);
+  line-height: 32px;
+  color: var(--font-secondary-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: var(--border-radius-pill);
+  background-color: rgba(0, 0, 0, 0.12);
+}

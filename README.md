@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# React University Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a repo for me to practice in React. I'm more of an [Ember](https://emberjs.com/) guy but I get that I need to learn the other popular frameworks to be competitive.
 
-## Available Scripts
+This is a simple app that's able to display all the Universities in the world by using Hipo/university-domains-list. In addition, you can subscribe to a University to get updates from them (in theory).
 
-In the project directory, you can run:
+The subscription is powered by Firebase using its local emulator.
 
-### `npm start`
+**TODO**:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Debounced searching
+- Stylelint
+- Sorting by University name and Country
+- Register, Login, be able to favorite a University
+- Reusable UI for common components such as buttons, inputs, etc.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+You will need the following things properly installed on your computer.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with npm)
+* [Google Chrome](https://google.com/chrome/)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* `git clone <repository-url>` this repository
+* `cd react-university-demo`
+* `npm install`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running / Development
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* `npm start`
+* Visit your app at [http://localhost:3000](http://localhost:3000).
 
-### `npm run eject`
+### Running Tests
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* `npm test`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Building
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* `npm run build`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Further Reading / Useful Links
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React documentation](https://reactjs.org/)
+- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)

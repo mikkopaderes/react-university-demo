@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom';
+
+import { faCaretDown, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { connectFirestoreEmulator, getFirestore } from 'firebase/firestore';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FirestoreProvider, useFirebaseApp } from 'reactfire';
+
+import NotFound from './routes/NotFound';
+import Universities from './routes/Universities';
+
+library.add(faCaretDown, faTimesCircle);
 
 function App() {
+  const firebaseApp = useFirebaseApp();
+  const firestore = getFirestore(firebaseApp);
+
+  connectFirestoreEmulator(firestore, 'localhost', 8080);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FirestoreProvider sdk={firestore}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Universities />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </FirestoreProvider>
   );
 }
 
